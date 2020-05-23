@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Archive, , Art writer, Art piece, Artwork phto albumm, Artwork">
+    <meta name="author" content="wi seong">
+    <meta charset="utf-8">
+    <script src="jquery-3.5.1.min.js"></script>
+    <style>
+        body{
+            font-size: 80px;
+            font-family: "jua";
+        }
+        .title{
+            font-size: 50px;
+            text-align: center;
+        }
+        .agree {
+            display: block; 
+            padding-left: 40%;
+        }
+        .opposition{
+            display: block;
+            padding-left: 40%;
+        }
+        .abstention{
+            display: block; 
+            padding-left: 40%;
+        }
+        @font-face {
+            font-family: "jua";
+            src: url("BMJUA_otf.otf");
+        }
+    </style>
+    <script>
+        function sum(src){
+            var s=0;
+            s += src;
+            return s;
+        }
+        var a=0;
+    </script>
+</head>
+
+<body>
+
+    <div class="title">2청년교회 임시총회</div>
+    <br>
+    <form>
+        <div class="agree">
+            <a>찬성</a>
+            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount1 value=0>
+            <input type=button style="width:40px;font-size: 80px" value="+" onClick="javascript:this.form.amount1.value++;this.form.amount4.value++">
+            <input type=button style="width:40px;font-size: 80px" value="-" onClick="javascript:this.form.amount1.value--;this.form.amount4.value--">
+        </div>
+        <br>
+        <div class="opposition">
+            <a>반대</a>
+            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount2 value=0>
+            <input type=button style="width:40px;font-size: 80px" value="+" onClick="javascript:this.form.amount2.value++;this.form.amount4.value++">
+            <input type=button style="width:40px;font-size: 80px" value="-" onClick="javascript:this.form.amount2.value--;this.form.amount4.value--">
+        </div>
+        <br>
+        <div class="abstention">
+            <a>기권</a>
+            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount3 value=0>
+            <input type=button style="width:40px;font-size: 80px" value="+" onClick="javascript:this.form.amount3.value++;this.form.amount4.value++">
+            <input type=button style="width:40px;font-size: 80px"value="-" onClick="javascript:this.form.amount3.value--;this.form.amount4.value--">
+        </div>
+        <br>
+        <div class="abstention">
+            <a>총합</a>
+            <input type=text disabled style="background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount4 value=0>
+        </div>
+    </form>
+</body>
+
+</html>
+
