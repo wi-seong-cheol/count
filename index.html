@@ -17,16 +17,38 @@
             text-align: center;
         }
         .agree {
-            display: block; 
-            padding-left: 40%;
+            display: block;
+            padding-left: 36%;
         }
         .opposition{
             display: block;
-            padding-left: 40%;
+            padding-left: 36%;
         }
         .abstention{
             display: block; 
-            padding-left: 40%;
+            padding-left: 36%;
+        }
+        button:focus{outline : none;}
+        input[type=button] {
+            display: inline-block;
+            background-color: #ff9999;
+            border: none;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+            outline : none;
+            font-size: 80px;     
+        }
+        input[type=text] {
+            width:100px;
+            background-color: transparent;
+            border:0 solid black;
+            text-align: left;
+            font-size: 80px;
+        
         }
         @font-face {
             font-family: "jua";
@@ -50,28 +72,28 @@
     <form>
         <div class="agree">
             <a>찬성</a>
-            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount1 value=0>
-            <input type=button style="width:40px;font-size: 80px" value="+" onClick="javascript:this.form.amount1.value++;this.form.amount4.value++">
-            <input type=button style="width:40px;font-size: 80px" value="-" onClick="javascript:this.form.amount1.value--;this.form.amount4.value--">
+            <input type=text disabled name=amount1 value=0>
+            <input type=button value="△" onClick="javascript:this.form.amount1.value++;this.form.amount4.value++">
+            <input type=button value="▽" onClick="javascript:this.form.amount1.value--;this.form.amount4.value--">
         </div>
         <br>
         <div class="opposition">
             <a>반대</a>
-            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount2 value=0>
-            <input type=button style="width:40px;font-size: 80px" value="+" onClick="javascript:this.form.amount2.value++;this.form.amount4.value++">
-            <input type=button style="width:40px;font-size: 80px" value="-" onClick="javascript:this.form.amount2.value--;this.form.amount4.value--">
+            <input type=text disabled name=amount2 value=0>
+            <input type=button value="△" onClick="javascript:this.form.amount2.value++;this.form.amount4.value++">
+            <input type=button value="▽" onClick="javascript:this.form.amount2.value--;this.form.amount4.value--">
         </div>
         <br>
         <div class="abstention">
             <a>기권</a>
-            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount3 value=0>
-            <input type=button style="width:40px;font-size: 80px" value="+" onClick="javascript:this.form.amount3.value++;this.form.amount4.value++">
-            <input type=button style="width:40px;font-size: 80px"value="-" onClick="javascript:this.form.amount3.value--;this.form.amount4.value--">
+            <input type=text disabled name=amount3 value=0>
+            <input type=button value="△" onClick="javascript:this.form.amount3.value++;this.form.amount4.value++">
+            <input type=button value="▽" onClick="javascript:this.form.amount3.value--;this.form.amount4.value--">
         </div>
         <br>
         <div class="abstention">
             <a>총합</a>
-            <input type=text disabled style="width:100px;background-color:transparent;border:0 solid black;text-align:left;font-size: 80px;" name=amount4 value=0>
+            <input type=text disabled name=amount4 value=0>
         </div>
     </form>
 </body>
